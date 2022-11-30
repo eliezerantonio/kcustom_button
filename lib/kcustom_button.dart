@@ -21,3 +21,13 @@ class KCustomButton extends StatelessWidget {
     );
   }
 }
+
+class KCustomtext extends StatelessWidget {
+  final String text;
+
+  const KCustomtext({super.key, required this.text});
+  @override
+  Widget build(BuildContext context) {
+    return Text(text, style: TextStyle(fontSize: 23, color: Colors.red));
+  }
+}
